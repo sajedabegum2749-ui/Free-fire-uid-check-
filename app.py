@@ -3,7 +3,9 @@ Free Fire UID Info API
 Supports all regions: IND, SG, BR, BD, ID, TH, VN, TW, US, ME, PK, RU, CIS
 Special focus: BD (Bangladesh) region
 """
-
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import json
